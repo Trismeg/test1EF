@@ -1,0 +1,275 @@
+\documentclass{article}
+
+\usepackage{pgfplots}
+\usepackage[margin=0.75in, paperwidth=8.5in, paperheight=11in]{geometry}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage[]{units}
+
+
+% For nicely typeset tabular material
+\usepackage{booktabs}
+
+%%
+% For graphics / images
+%\usepackage{graphicx}
+%\usepackage[dvipsnames]{xcolor}
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{mathtools}% http://ctan.org/pkg/mathtools
+\usepackage{etoolbox}% http://ctan.org/pkg/etoolbox
+
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+
+\usepackage{units}
+
+\usepackage{cancel}
+\usepackage{physymb}
+
+
+
+
+\usepackage{sectsty} % Allows customizing section commands
+%\usepackage[dvipsnames]{xcolor}
+\usepackage{pgf,tikz}
+\usetikzlibrary{decorations.markings}
+\usepackage{circuitikz}
+\usepackage{pgfplots}
+\usetikzlibrary{shapes,arrows}
+\usetikzlibrary{arrows}
+\usetikzlibrary{patterns,fadings}
+ \usetikzlibrary{decorations.pathreplacing}
+ \usetikzlibrary{snakes}
+ \usetikzlibrary{spy}
+ \usepackage{setspace}
+
+ \usetikzlibrary{decorations.pathreplacing}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+%%
+% Additional
+\usepackage{units}
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{mathtools}% http://ctan.org/pkg/mathtools
+%\usepackage{mparhack}
+\usepackage{sectsty} % Allows customizing section commands
+%\usepackage[dvipsnames]{xcolor}
+\usepackage{pgf,tikz}
+%\usepackage{pgfplots}
+%\usetikzlibrary{shapes,arrows}
+%\usetikzlibrary{patterns,fadings}
+%\usetikzlibrary{arrows}
+% \usetikzlibrary{decorations.pathreplacing}
+% \usetikzlibrary{snakes}
+ %\usetikzlibrary{spy}
+ %\usepackage{setspace}
+% \usepackage{3dplot}
+% \usepackage{cancel}
+%\usepackage{physymb}
+%\usepackage{braket}
+%\usepackage{verbatim}
+%\usepackage[x11names]{xcolor}                     %Additional colors
+%\usepackage{euler}  
+
+
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+
+\begin{document}
+\pagenumbering{gobble}
+
+\doublespacing
+\textbf{IB Physics }                        %%%(class number and section) 
+ \hfill                             %%%(date of test)
+${\bf Name: } \underline{\hspace{2.5in}}$
+
+\begin{centering}
+\vspace{1cm}
+\textbf{Exam 2}\\
+\end{centering}
+
+\vspace{1cm}
+$$E=-\frac{\Delta V}{\Delta x}$$
+$$C=\frac{Q}{V}$$
+$$I=\frac{\Delta Q}{\Delta t}$$
+   $$V=IR$$
+   $$P=IV$$
+   $$\text{Parallel:}\hspace{1cm} \frac{1}{R_{eq}}=\frac{1}{R_1}+\frac{1}{R_2}$$
+   $$\text{Series:}\hspace{1cm} {R_{eq}}={R_1}+{R_2}$$
+   $$\overrightarrow{F}_B=q\overrightarrow{v}\times\overrightarrow{B}$$
+    $$\overrightarrow{F}_B=\overrightarrow{IL}\times\overrightarrow{B}$$
+    $$B_{wire}=\frac{\mu_0 I}{2\pi r}$$
+\begin{table}[htbp]
+\begin{center}
+\footnotesize
+\begin{tabular}{lllll}
+\toprule
+ Description              & Symbol          & Quantity                                                                \\
+\midrule
+  Gravitational Constant   & $G$             & $6.67 \times 10^{-11} \nicefrac{ \text{N}\cdot\text{m}^2}{\text{kg}^2}$ \\
+    Electrostatic Constant   & $k_e$           & $8.99 \times 10^{9} \nicefrac{ \text{N}\cdot\text{m}^2}{\text{C}^2}$    \\
+    Boltzmann's Constant     & $k_B$           & $1.38 \times 10^{-23} \nicefrac{ \text{J}}{\text{K}}$                   \\
+    Avogado's Number         & $N_A$           & $6.02 \times 10^{23} $                                                  \\
+    Plank's Constant         & $h$             & $6.63 \times 10^{-34}  \text{J}\cdot\text{s}$                           \\
+    Speed of Light           & $c$             & $3.0 \times 10^{8} \nicefrac{ \text{m}}{\text{s}}$                      \\
+    Fundamental Charge       & $e$             & $1.6 \times 10^{-19} \text{C}$                                          \\
+    Mass of the Electron     & $m_e$           & $9.1 \times 10^{-31} \text{kg}$                                         \\
+    Mass of Proton           & $m_p$           & $1.7 \times 10^{-27} \text{kg}$                                         \\ 
+    Gas Constant             & $R$             & $8.31 \nicefrac{ \text{ J}}{\text{mole}\cdot\text{K}}$                  \\
+    Vacuum Permativity       & $\varepsilon_0$ & $8.85 \times 10^{-12} \nicefrac{ \text{F}}{\text{m}}$                    \\
+    Vacuum Permeablity       & $\mu_0$         & $4\pi \times 10^{-7} \nicefrac{ \text{T}\cdot\text{m}}{\text{A}}$       \\
+    Bohr Radius              & $a_0$           & $0.53 \times 10^{-10} \text{m}$                                         \\
+    Fine Structure  Constant & $\alpha$        & $\nicefrac{1}{137}$                                              \\ 
+
+\bottomrule
+\end{tabular}
+\end{center}
+  \caption{A list of physical quantities with SI units and dimensions.}
+  \label{tab:font-sizes}
+\end{table}
+
+
+\newpage
+
+The first question of the exam is worth 30 points.
+
+ $\bf{1)}$ Consider the following circuit
+ 
+
+ \begin{circuitikz} 
+ \draw (2,0) to[battery, l=$200V$] (0,0);
+ \draw (2,0) -- (2,6);
+  \draw (0,4) -- (0,6);
+ \draw (0,2)     to[resistor, l=$100\Omega$] (0,4);
+      \draw (2,4) to[resistor, l=$200\Omega$] (0,4);
+      \draw (2,6) to[resistor, l=$400\Omega$] (0,6);
+      \draw (0,0) to[resistor, l=$50\Omega$] (0,2);
+\end{circuitikz}
+
+
+ a.  Determine the equivalent resistance of the circuit.
+ 
+
+   \vspace{2.5cm}
+
+ 
+ b.  Determine the current through the $50\Omega$ resistor.
+ 
+  \vspace{2.5cm}
+  
+ c.  Determine the current through the $200\Omega$ resistor.
+ 
+  \vspace{2.5cm}
+ 
+ d. Determine the voltage drop across the $100\Omega$ resistor.
+ 
+  \vspace{2.5cm}
+ 
+ e. Determine the power dissipated by the $400\Omega$ resistor.
+ 
+  
+ 
+ 
+
+
+  \newpage
+  The second question is worth 30 points.  
+  
+ $\bf{2)}$  Consider a magnetic field interacting with a loop of current.  The loop is a 4x6 cm rectangle.  \\
+ The wire contains $10^{18}$ free moving electrons.  The magnetic field is $B=0.050$ Tesla.  The current is  $I=1.6$ Amperes.
+ 
+  \tikzset{->-/.style={decoration={
+  markings,
+  mark=at position #1 with {\arrow{latex}}},postaction={decorate}}}
+
+ 
+ $$\begin{tikzpicture}[scale=1]
+\draw[very thick,->-=.5] (0,0) -- (2,0);
+\draw[very thick,->-=.5] (2,0) -- (2,3)node[midway, anchor=west]{$I$};
+\draw[very thick,->-=.5] (2,3) -- (0,3) ;
+\draw[very thick,->-=.5] (0,3) -- (0,0);
+\draw[<-] (-1,0.3)--(-0.2,0.3);
+\draw[<-] (-1,0.5)--(-0.2,0.5);
+\draw[<-] (-1,0.7)--(-0.2,0.7);
+\draw[<-] (-1,0.9)--(-0.2,0.9);
+\draw[<-] (-1,1.1)--(-0.2,1.1);
+\draw[<-] (-1,1.3)--(-0.2,1.3);
+\draw[<-] (-1,1.5)--(-0.2,1.5);
+\draw[<-] (-1,1.7)--(-0.2,1.7);
+\draw[<-] (-1,1.9)--(-0.2,1.9);
+\draw[<-] (-1,2.1)--(-0.2,2.1);
+\draw[<-] (-1,2.3)--(-0.2,2.3);
+\draw[<-] (-1,2.5)--(-0.2,2.5);
+\draw[<-] (-1,2.7)--(-0.2,2.7);
+\draw[<-] (-1,2.9)--(-0.2,2.9);
+
+\draw (-1,0.6) node[anchor=east]{$B$};
+
+\begin{scope}[scale={1}, shift={(-0.4,2.4)}]
+%\draw (0,0) circle(1.8mm);
+%\fill (0,0) circle(0.3mm);
+%\draw (-0.2,0) node[anchor=east]{$F_1$};
+\end{scope}
+
+\begin{scope}[scale={1}, shift={(2.4,2.4)}]
+%\draw (0,0) circle(1.8mm);
+%\fill (0,0) circle(0.3mm);
+%\draw (0.2,0) node[anchor=west]{$F_2$};
+\begin{scope}[scale={1}, rotate={(45)}]
+%\draw(-0.18,0) -- (0.18,0);
+%\draw(0,-0.18) -- (0,0.18);
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+$$ 
+  
+ a.  Determine the direction of magnetic force on each section of the loop.
+   \vspace{3.5cm}
+ 
+ b.  Determine the magnitude of force on each section of the loop.
+   \vspace{4.5cm}
+ 
+ c.  Describe the structure of the magnetic field created by the loop.
+   \vspace{4.5cm}
+ 
+ d.  Determine the subsequent motion of the loop if it is free to move.
+ 
+
+  \newpage
+
+Question three is worth 30 points.
+
+  $\bf{3)}$  Consider a charged capacitor that holds $60\times10^{-3}$ Coulombs with $12$ Volts of potential.   The capacitor is connected in series with a $300\  \Omega$ resistor.  The capacitor begins discharging at $t=0$.  \vspace{0.5cm}
+  
+  a.  Draw the circuit described above.
+    \vspace{5.5cm}
+  
+  b.  Draw a graph of the current as a function of time, $I(t)$.  Include the value of the initial current.
+    \vspace{5.5cm}
+  
+  c.  Explain how the capacitor functions as a battery in this system.
+    \vspace{5.5cm}
+ 
+  
+  \newpage
+
+Question four is worth 10 points.
+
+  $\bf{4)}$  Two long straight wires, separated by 50 cm, run parallel and carry current in opposite directions.  \vspace{0.5cm}
+  
+Describe the magnetic force between the wires.
+\vspace{5cm}
+
+Explain how these wires could be used to define the Ampere.
+  
+ 
+\end{document}
